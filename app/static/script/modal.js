@@ -71,7 +71,7 @@ $(document).ready(function () {
     $('.remove').click(function () {
         const remove = $(this)
         $.ajax({
-            type: 'DELETE',
+            type: 'DELET',
             url: '/delete/' + remove.data('source'),
             success: function (res) {
                 console.log(res.response)
